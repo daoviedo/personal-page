@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@theme {
+  --font-sans: InterVariable, sans-serif;
+  --color-dark-primary: #1a1a1a;
+  --color-dark-text-primary: #f5f5f5;
+  --color-dark-text-secondary: #e0e0e0;
+  --color-dark-secondary: #242424;
+  --color-dark-shadow: rgba(0, 0, 0, 0.3);
+  --color-light-primary: #f5f5f7;
+  --color-light-secondary: #fff;
+  --color-light-text-primary: #1d1d1f;
+  --color-light-text-secondary: #6e6e73;
+  --shadow-light-shadow: 2px 4px 12px #00000014;
+  --ease-custom: cubic-bezier(0, 0, 0.5, 1);
+}
+
+@layer components {
+  .card-content {
+    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary transition-all duration-300 ease-custom hover:shadow-2xl;
+  }
+  .card {
+    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3 py-1 transition-all duration-300 ease-custom hover:shadow-xl hover:scale-110;
+  }
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
