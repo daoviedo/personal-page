@@ -12,17 +12,17 @@ function About() {
         <Map />
       </div>
       <div className="flex flex-col h-auto">
-        <p className="flex items-center justify-end sm:justify-center text-xs sm:text-xl  pt-4 mr-4 ml-4">
-          <MdLocationPin className="mr-1 size-8" />
+        <p className="flex items-center justify-end sm:justify-center text-xs sm:text-lg pt-4 mx-4 text-light-text-secondary dark:text-dark-text-secondary">
+          <MdLocationPin className="mr-1 size-5 sm:size-6" />
           Houston, TX, United States
         </p>
         <div className="flex-1 pt-11 sm:pt-8 px-4">
-          <h1 className="font-semibold text-3xl">Daniel Oviedo</h1>
+          <h1 className="font-bold text-4xl">Daniel Oviedo</h1>
           <h2 className="font-light text-lg text-gray-900 dark:text-dark-text-secondary">
             Software Engineer II at JPMorgan Chase & Co.
           </h2>
 
-          <p className="my-4 font-light pt-2">
+          <p className="my-4 text-sm font-light text-light-text-primary dark:text-dark-text-secondary">
             I am a software engineer with 5 years of experience, specializing in
             building UI applications. I have worked at leading fintech
             companies, designing and delivering large-scale React applications

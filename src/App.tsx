@@ -9,7 +9,10 @@ function App() {
   const { theme } = useTheme();
   return (
     <>
-      <div data-theme={theme} className="bg-light-primary dark:bg-dark-primary">
+      <div
+        data-theme={theme}
+        className="bg-light-primary dark:bg-dark-primary min-w-screen min-h-screen"
+      >
         <Header />
         <div className="flex flex-col pt-14 items-center">
           <About />
