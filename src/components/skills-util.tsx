@@ -1,5 +1,6 @@
 import React from 'react';
 import { DiCss3, DiGit, DiHtml5, DiNodejsSmall, DiReact } from 'react-icons/di';
+import { FaAws } from 'react-icons/fa';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiJavascript, SiJest, SiTypescript } from 'react-icons/si';
 export interface Skill {
@@ -19,4 +20,5 @@ export const skillMap: Skill[] = [
   { name: 'Node.js', component: <DiNodejsSmall /> },
   { name: 'Jest', component: <SiJest className="text-3xl" /> },
   { name: 'Git', component: <DiGit /> },
+  { name: '', component: <FaAws className="-mr-1" /> },
 ];

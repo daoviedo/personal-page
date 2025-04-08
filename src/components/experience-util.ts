@@ -12,7 +12,6 @@ export const allExperience: ExperienceCardProps[] = [
     location: 'Houston, TX',
     info: [
       'Built and maintained multiple React applications used by traders to execute trades, track trade records, and monitor real-time market data across exchanges.',
-      'Replaced legacy systems with a modern app stack, reducing licensing costs and improving trade transparency and user experience.',
       'Developed a cross-app communication service using RxJS and OpenFin interop, enabling fast, real-time data sharing between applications.',
       'Integrated AG Grid with features like pagination, caching, virtualization, and lazy loading to efficiently handle large datasets across apps.',
       'Established a testing standard using TypeScript, Jest, and React Testing Library, including snapshot testing to improve test reliability and consistency.',

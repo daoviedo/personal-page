@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @theme {
   --font-sans: InterVariable, sans-serif;
-  --color-dark-primary: #1a1a1a;
+  --color-dark-primary: #1e1e1e;
   --color-dark-text-primary: #f5f5f5;
   --color-dark-text-secondary: #e0e0e0;
   --color-dark-secondary: #242424;
@@ -19,7 +19,7 @@
     @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary transition-all duration-300 ease-custom hover:shadow-2xl;
   }
   .card {
-    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3 py-1 transition-all duration-300 ease-custom hover:shadow-xl hover:scale-110;
+    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-3xl shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3.5 py-1 transition-all duration-300 ease-custom hover:shadow-xl hover:scale-110;
   }
 }
 
