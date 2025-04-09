@@ -47,8 +47,8 @@ export const ExperienceCard = ({
         {/* body */}
         <div className="flex-1 ">
           <ul className="list-disc sm:pl-8 text-sm font-light pt-2 text-light-text-primary dark:text-dark-text-secondary">
-            {info.map(bulletPoint => (
-              <li>{bulletPoint}</li>
+            {info.map((bulletPoint: string, index: number) => (
+              <li key={index}>{bulletPoint}</li>
             ))}
           </ul>
         </div>
