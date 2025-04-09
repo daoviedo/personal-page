@@ -7,13 +7,11 @@ import { skillMap } from './components/skills-util';
 function App() {
   return (
     <>
-      <div className="bg-light-primary dark:bg-dark-primary min-h-screen">
-        <Header />
-        <div className="flex flex-col pt-14 items-center">
-          <About />
-          <Skills skillMap={skillMap} />
-          <Experience />
-        </div>
+      <Header />
+      <div className="flex flex-col pt-14 items-center">
+        <About />
+        <Skills skillMap={skillMap} />
+        <Experience />
       </div>
     </>
   );
