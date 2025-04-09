@@ -15,6 +15,12 @@
   --ease-custom: cubic-bezier(0, 0, 0.5, 1);
 }
 
+@layer base {
+  body {
+    @apply bg-light-primary dark:bg-dark-primary min-h-screen;
+  }
+}
+
 @layer components {
   .card-content {
     @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary transition-all duration-300 ease-custom hover:shadow-2xl;
