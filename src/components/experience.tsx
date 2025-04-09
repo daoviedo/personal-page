@@ -9,6 +9,7 @@ function Experience() {
         <ExperienceCard
           {...exp}
           last={iteration === allExperience.length - 1}
+          key={exp.name}
         />
       ))}
     </div>
