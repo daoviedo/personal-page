@@ -1,5 +1,8 @@
 @import 'tailwindcss';
+@plugin "tailwindcss-motion";
+
 @custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: InterVariable, sans-serif;
   --color-dark-primary: #1e1e1e;
@@ -12,7 +15,25 @@
   --color-light-text-primary: #1d1d1f;
   --color-light-text-secondary: #6e6e73;
   --shadow-light-shadow: 2px 4px 12px #00000014;
-  --ease-custom: cubic-bezier(0, 0, 0.5, 1);
+
+  --animate-typing: typing 3s steps(22) infinite alternate, blink 0.7s infinite;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 22ch;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-r-light-text-secondary dark:border-r-dark-text-secondary;
+    }
+  }
 }
 
 @layer base {
@@ -23,9 +44,9 @@
 
 @layer components {
   .card-content {
-    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary transition-all duration-300 ease-custom hover:shadow-2xl;
+    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary;
   }
   .card {
-    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-3xl shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3.5 py-1 transition-all duration-300 ease-custom hover:shadow-xl hover:scale-110;
+    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-3xl shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3.5 py-1;
   }
 }
