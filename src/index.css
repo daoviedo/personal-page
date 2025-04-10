@@ -16,22 +16,29 @@
   --color-light-text-secondary: #6e6e73;
   --shadow-light-shadow: 2px 4px 12px #00000014;
 
-  --animate-typing: typing 3s steps(22) infinite alternate, blink 0.7s infinite;
+  --animate-typing: typing-delay 1s, typing 3s steps(20) 1s forwards,
+    blink 1s step-end infinite;
+
+  @keyframes typing-delay {
+    from {
+      width: 0ch;
+    }
+    to {
+      width: 0ch;
+    }
+  }
 
   @keyframes typing {
     from {
-      width: 0;
+      width: 0ch;
     }
     to {
-      width: 22ch;
+      width: calc(20ch + 2px);
     }
   }
   @keyframes blink {
-    from {
+    50% {
       border-right-color: transparent;
-    }
-    to {
-      border-r-light-text-secondary dark:border-r-dark-text-secondary;
     }
   }
 }

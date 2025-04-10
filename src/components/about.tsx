@@ -17,12 +17,12 @@ function About() {
           Houston, TX, United States
         </p>
         <div className="flex-1 pt-11 sm:pt-8 px-4">
-          <h1 className="font-bold text-4xl motion-preset-blur-up motion-duration-1000 motion-translate-y-in-50 motion-delay-100">
+          <h1 className="font-black text-4xl motion-preset-blur-up">
             Daniel Oviedo
           </h1>
           <h2 className="flex flex-col sm:block sm:flex-row font-light text-lg text-light-text-secondary dark:text-dark-text-secondary motion-preset-blur-up motion-duration-1000 motion-translate-y-in-50 motion-delay-300">
             Software Engineer II at{' '}
-            <span className="inline-block font-light text-lg overflow-hidden whitespace-nowrap font-mono animate-typing border-r-2 -mb-2">
+            <span className="inline-block font-light text-lg overflow-hidden whitespace-nowrap font-mono animate-typing border-r-2 h-6 -mb-1 border-r-light-text-secondary dark:border-r-dark-text-secondary">
               JPMorgan Chase & Co.
             </span>
           </h2>
