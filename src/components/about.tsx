@@ -1,4 +1,5 @@
 import self from '../assets/self.jpg';
+import Contact from './contact';
 import Map from './map';
 import { MdLocationPin } from 'react-icons/md';
 function About() {
@@ -34,6 +35,7 @@ function About() {
             in production for thousands of users.
           </p>
         </div>
+        <Contact />
       </div>
     </div>
   );
