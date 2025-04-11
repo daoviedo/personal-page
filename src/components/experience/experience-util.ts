@@ -1,7 +1,7 @@
 import { ExperienceCardProps } from './experience-card';
-import JPMCLogo from '../assets/jpmc.png';
-import AmexLogo from '../assets/amex.png';
-import CNLogo from '../assets/cn.png';
+import JPMCLogo from '../../assets/jpmc.png';
+import AmexLogo from '../../assets/amex.png';
+import CNLogo from '../../assets/cn.png';
 
 export const allExperience: ExperienceCardProps[] = [
   {

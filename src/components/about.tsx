@@ -12,12 +12,12 @@ function About() {
         <Map />
       </div>
       <div className="flex flex-col h-auto">
-        <p className="flex items-center justify-end sm:justify-center text-xs sm:text-lg pt-4 mx-4 text-light-text-secondary dark:text-dark-text-secondary">
+        <p className="flex items-center justify-end sm:justify-center text-xs sm:text-lg pt-4 mx-4 text-light-text-secondary dark:text-dark-text-secondary motion-preset-pop">
           <MdLocationPin className="mr-1 size-5 sm:size-6 animate-bounce" />
           Houston, TX, United States
         </p>
         <div className="flex-1 pt-11 sm:pt-8 px-4">
-          <h1 className="font-black text-4xl motion-preset-blur-up">
+          <h1 className="font-black text-4xl sm:motion-preset-blur-up sm:motion-duration-1000 sm:motion-delay-100">
             Daniel Oviedo
           </h1>
           <h2 className="flex flex-col sm:block sm:flex-row font-light text-lg text-light-text-secondary dark:text-dark-text-secondary motion-preset-blur-up motion-duration-1000 motion-translate-y-in-50 motion-delay-300">

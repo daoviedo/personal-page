@@ -43,6 +43,26 @@
   }
 }
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* Show scrollbar */
+  .scrollbar::-webkit-scrollbar {
+    display: block;
+  }
+  .scrollbar {
+    -ms-overflow-style: auto; /* IE and Edge */
+    scrollbar-width: auto; /* Firefox */
+  }
+}
+
 @layer base {
   body {
     @apply bg-light-primary dark:bg-dark-primary min-h-screen;

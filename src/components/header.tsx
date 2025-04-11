@@ -21,6 +21,13 @@ function Header() {
       >
         Experience
       </ScrollLink>
+      <ScrollLink
+        to="#projects"
+        offset={-80}
+        className="text-light-text-secondary hover:text-light-text-primary hover:cursor-pointer dark:text-dark-text-secondary dark:hover:text-dark-text-primary p-3"
+      >
+        Projects
+      </ScrollLink>
       <Button
         className="text-base text-light-text-secondary hover:text-light-text-primary hover:cursor-pointer dark:text-dark-text-secondary dark:hover:text-dark-text-primary p-3"
         onClick={toggleTheme}

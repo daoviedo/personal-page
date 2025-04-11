@@ -1,8 +1,9 @@
 import About from './components/about';
-import Experience from './components/experience';
+import Experience from './components/experience/experience';
 import Header from './components/header';
-import Skills from './components/skills';
-import { skillMap } from './components/skills-util';
+import Carousel from './components/projects/carousel';
+import Skills from './components/skills/skills';
+import { skillMap } from './components/skills/skills-util';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <About />
         <Skills skillMap={skillMap} />
         <Experience />
+        <Carousel />
       </div>
     </>
   );
