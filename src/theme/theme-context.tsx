@@ -1,12 +1,8 @@
-import { ReactNode, useCallback, useEffect, useState } from 'react';
+import { PropsWithChildren, useCallback, useEffect, useState } from 'react';
 import { Theme, ThemeContext } from './use-theme';
 import { getInitialTheme } from './get-initial-theme';
 
-interface ThemeProviderProps {
-  children: ReactNode;
-}
-
-function ThemeProvider({ children }: ThemeProviderProps) {
+function ThemeProvider({ children }: PropsWithChildren) {
   const [theme, setTheme] = useState<Theme>(getInitialTheme());
 
   useEffect(() => {
