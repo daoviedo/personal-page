@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import { ProjectCard } from './project-card';
 import { Button } from '../button';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { projects } from './projects';
+import { CardProvider } from './card-provider';
 
 function Carousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -25,12 +27,13 @@ function Carousel() {
       </h1>
       <div
         ref={scrollRef}
-        className="w-full sm:max-w-200 my-5 sm:w-auto flex overflow-x-auto space-x-5 no-scrollbar"
+        className="w-full sm:max-w-200 py-5 sm:px-4 sm:w-auto flex overflow-x-auto space-x-5 no-scrollbar snap-x snap-mandatory"
       >
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects.map(project => (
+          <CardProvider>
+            <ProjectCard {...project} />
+          </CardProvider>
+        ))}
       </div>
       <Button
         className="hidden sm:block absolute top-1/2 -translate-y-1/2 left-2 bg-gray-500/50 p-2 rounded-full shadow hover:bg-gray-200/50"
