@@ -27,7 +27,7 @@ function Carousel() {
       </h1>
       <div
         ref={scrollRef}
-        className="w-full sm:max-w-200 py-5 sm:px-4 sm:w-auto flex overflow-x-auto space-x-5 no-scrollbar snap-x snap-mandatory"
+        className="w-full sm:max-w-200 py-5 sm:px-4 sm:w-auto flex overflow-x-auto space-x-5 no-scrollbar snap-x snap-mandatory sm:snap-none"
       >
         {projects.map(project => (
           <CardProvider>
