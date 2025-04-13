@@ -6,14 +6,18 @@
 @theme {
   --font-sans: InterVariable, sans-serif;
   --color-dark-primary: #1e1e1e;
-  --color-dark-text-primary: #f5f5f5;
-  --color-dark-text-secondary: #e0e0e0;
-  --color-dark-secondary: #242424;
-  --color-dark-shadow: rgba(0, 0, 0, 0.3);
-  --color-light-primary: #f5f5f7;
-  --color-light-secondary: #fff;
-  --color-light-text-primary: #1d1d1f;
-  --color-light-text-secondary: #6e6e73;
+  --color-dark-text-primary: #f0f0f0;
+  --color-dark-secondary: #2a2a2a;
+  --color-dark-labels: #b0b0b0;
+  --color-dark-line: #3d3d3d;
+  --color-dark-blue: #3b82f6;
+  --color-dark-red: #ef4444;
+  --color-dark-green: #22c55e;
+  --color-light-primary: #f5f5f5;
+  --color-light-secondary: #ffffff;
+  --color-light-text-primary: #1e1e1e;
+  --color-light-labels: #666666;
+  --color-light-line: #d1d1d1;
   --shadow-light-shadow: 2px 4px 12px #00000014;
 
   --animate-typing: typing-delay 1s, typing 3s steps(20) 1s forwards,
@@ -71,9 +75,9 @@
 
 @layer components {
   .card-content {
-    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary/90 dark:bg-dark-secondary/90 rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary;
+    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-none text-light-text-primary dark:text-dark-text-primary;
   }
   .card {
-    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-3xl shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3.5 py-1;
+    @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-3xl shadow-light-shadow dark:shadow-none text-dark-primary dark:text-dark-text-primary px-3.5 py-1;
   }
 }
