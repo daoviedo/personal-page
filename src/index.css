@@ -71,7 +71,7 @@
 
 @layer components {
   .card-content {
-    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary dark:bg-dark-secondary rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary;
+    @apply max-w-200 h-auto m-5 p-4 bg-light-secondary/90 dark:bg-dark-secondary/90 rounded-[18px] shadow-light-shadow dark:shadow-dark-shadow text-light-text-primary dark:text-dark-text-primary;
   }
   .card {
     @apply bg-light-secondary dark:bg-dark-secondary flex items-center justify-center rounded-3xl shadow-light-shadow dark:shadow-dark-shadow text-dark-primary dark:text-dark-text-primary px-3.5 py-1;
