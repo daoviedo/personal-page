@@ -10,26 +10,26 @@ function Header() {
       <ScrollLink
         to="#about"
         offset={-80}
-        className="text-light-text-secondary hover:text-light-text-primary hover:cursor-pointer dark:text-dark-text-secondary dark:hover:text-dark-text-primary p-3"
+        className="text-light-text-primary hover:text-dark-blue dark:hover:text-blue-400 dark:text-dark-text-primary p-3 transition-colors"
       >
         About
       </ScrollLink>
       <ScrollLink
         to="#experience"
         offset={-80}
-        className="text-light-text-secondary hover:text-light-text-primary hover:cursor-pointer dark:text-dark-text-secondary dark:hover:text-dark-text-primary p-3"
+        className="text-light-text-primary hover:text-dark-blue dark:hover:text-blue-400 dark:text-dark-text-primary p-3 transition-colors"
       >
         Experience
       </ScrollLink>
       <ScrollLink
         to="#projects"
         offset={-80}
-        className="text-light-text-secondary hover:text-light-text-primary hover:cursor-pointer dark:text-dark-text-secondary dark:hover:text-dark-text-primary p-3"
+        className="text-light-text-primary hover:text-dark-blue dark:hover:text-blue-400 dark:text-dark-text-primary p-3 transition-colors"
       >
         Projects
       </ScrollLink>
       <Button
-        className="text-base text-light-text-secondary hover:text-light-text-primary hover:cursor-pointer dark:text-dark-text-secondary dark:hover:text-dark-text-primary p-3"
+        className="text-base text-light-text-primary hover:text-dark-blue dark:hover:text-blue-400 dark:text-dark-text-primary p-3 transition-colors hover:cursor-pointer"
         onClick={toggleTheme}
       >
         {theme === 'dark' ? <FiMoon /> : <FiSun />}

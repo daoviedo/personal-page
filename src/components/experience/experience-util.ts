@@ -12,9 +12,8 @@ export const allExperience: ExperienceCardProps[] = [
     location: 'Houston, TX',
     info: [
       'Built and maintained multiple React applications used by traders to execute trades, track trade records, and monitor real-time market data across exchanges.',
-      'Developed a cross-app communication service using RxJS and OpenFin interop, enabling fast, real-time data sharing between applications.',
+      'Developed a cross-app communication service using RxJS and OpenFin interop.',
       'Integrated AG Grid with features like pagination, caching, virtualization, and lazy loading to efficiently handle large datasets across apps.',
-      'Established a testing standard using TypeScript, Jest, and React Testing Library, including snapshot testing to improve test reliability and consistency.',
       'Rolled out Storybook.js to document and demo reusable UI components, streamlining development and collaboration with other teams.',
       'Contributed to JPMC’s internal UI toolkit with custom components and enhancements adopted by teams across the firm.',
     ],

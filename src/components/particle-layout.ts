@@ -23,12 +23,12 @@ export const particleLayout = (theme: Theme): ISourceOptions => {
       detectsOn: 'window',
       events: {
         onClick: {
-          enable: true,
+          enable: false,
           mode: 'repulse',
         },
         onHover: {
-          enable: true,
-          mode: 'bubble',
+          enable: false,
+          mode: 'attract',
           parallax: {
             enable: false,
             force: 2,
@@ -47,11 +47,11 @@ export const particleLayout = (theme: Theme): ISourceOptions => {
           quantity: 1,
         },
         attract: {
-          distance: 200,
+          distance: 100,
           duration: 0.4,
           easing: 'ease-out-quad',
           factor: 1,
-          maxSpeed: 50,
+          maxSpeed: 20,
           speed: 1,
         },
         bounce: {
@@ -256,7 +256,7 @@ export const particleLayout = (theme: Theme): ISourceOptions => {
         size: false,
         speed: {
           min: 0.1,
-          max: 1,
+          max: 0.5,
         },
         spin: {
           acceleration: 0,
@@ -281,7 +281,7 @@ export const particleLayout = (theme: Theme): ISourceOptions => {
           mode: 'delete',
           value: 0,
         },
-        value: 100,
+        value: 80,
       },
       opacity: {
         value: {
@@ -320,8 +320,8 @@ export const particleLayout = (theme: Theme): ISourceOptions => {
       },
       size: {
         value: {
-          min: 1,
-          max: 3,
+          min: 0.5,
+          max: 2,
         },
         animation: {
           count: 0,
