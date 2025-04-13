@@ -35,14 +35,17 @@ export const ProjectCard = ({
     >
       {/* Hidden description overlay */}
       <div
-        data-isClicked={isClicked}
-        className="absolute inset-0 flex flex-col items-center justify-between bg-black/80 text-white text-center text-sm p-4 opacity-0 hover:opacity-100 data-[isClicked=true]:opacity-100 sm:data-[isClicked=true]:opacity-0 hover:sm:data-[isClicked=true]:opacity-100 transition-opacity duration-300 rounded-[18px]"
+        data-isclicked={isClicked}
+        className="absolute inset-0 flex flex-col items-center justify-between bg-black/80 text-white text-center text-sm p-4 opacity-0 hover:opacity-100 data-[isClicked=true]:opacity-100 sm:data-[isclicked=true]:opacity-0 hover:sm:data-[isclicked=true]:opacity-100 transition-opacity duration-300 rounded-[18px]"
       >
         <div className="text-center font-semibold text-dark-text-primary text-xl p-4">
           {name}
         </div>
         {desc}
-        <div className="flex mt-2 space-x-3">
+        <div
+          data-isclicked={isClicked}
+          className="flex mt-2 space-x-3 data-[isclicked=false]:pointer-events-none  sm:data-[isclicked=false]:pointer-events-auto"
+        >
           {liveLink !== '' && (
             <Button
               href={liveLink}
@@ -66,7 +69,10 @@ export const ProjectCard = ({
         </div>
         <div className="text-center p-3 font-light text-sm text-dark-text-primary flex flex-wrap justify-center gap-1">
           {techStack.map(tech => (
-            <span className="bg-gradient-to-r from-sky-600 via-blue-600 to-blue-700 rounded-xl px-1.5 py-0.5 font-mono">
+            <span
+              key={tech}
+              className="bg-gradient-to-r from-sky-600 via-blue-600 to-blue-700 rounded-xl px-1.5 py-0.5 font-mono"
+            >
               {tech}
             </span>
           ))}
