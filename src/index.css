@@ -20,15 +20,12 @@
   --color-light-line: #d1d1d1;
   --shadow-light-shadow: 2px 4px 12px #00000014;
 
-  --animate-typing: typing-delay 1s, typing 3s steps(20) 1s forwards,
+  --animate-typing: fade-in 0.1s 1s forwards, typing 3s steps(20) 1s forwards,
     blink 1s step-end infinite;
 
-  @keyframes typing-delay {
-    from {
-      width: 0ch;
-    }
+  @keyframes fade-in {
     to {
-      width: 0ch;
+      opacity: 1;
     }
   }
 
