@@ -281,7 +281,7 @@ export const particleLayout = (theme: Theme): ISourceOptions => {
           mode: 'delete',
           value: 0,
         },
-        value: 80,
+        value: 100,
       },
       opacity: {
         value: {
