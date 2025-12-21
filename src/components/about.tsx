@@ -24,15 +24,12 @@ function About() {
           <h2 className="flex flex-col sm:block sm:flex-row font-light text-lg motion-preset-blur-up motion-duration-1000 motion-translate-y-in-50 motion-delay-300">
             Software Engineer II at{' '}
             <span className="inline-block opacity-0 font-light text-lg overflow-hidden whitespace-nowrap font-mono animate-typing border-r-2 h-6 -mb-1 text-dark-blue dark:text-blue-400 border-r-light-text-primary dark:border-r-dark-text-primary">
-              JPMorgan Chase & Co.
+              Trumid
             </span>
           </h2>
 
-          <p className="my-4 text-sm font-light motion-preset-blur-up motion-duration-1000 motion-translate-y-in-25 sm:motion-translate-y-in-50 motion-delay-700">
-            I am a software engineer with 5 years of experience, specializing in
-            building UI applications. I have worked at leading fintech
-            companies, designing and delivering large-scale React applications
-            for thousands of users.
+          <p className="my-4 text-sm leading-relaxed font-light motion-preset-blur-up motion-duration-1000 motion-translate-y-in-25 sm:motion-translate-y-in-50 motion-delay-700">
+            I am a software engineer with 6 years of experience specializing in UI development, having built large-scale React applications at leading fintech companies for thousands of users. My work centers on architecting intuitive, performant, and well-structured UI experiences.
           </p>
         </div>
         <Contact />

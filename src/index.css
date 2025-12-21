@@ -20,7 +20,7 @@
   --color-light-line: #d1d1d1;
   --shadow-light-shadow: 2px 4px 12px #00000014;
 
-  --animate-typing: fade-in 0.1s 1s forwards, typing 3s steps(20) 1s forwards,
+  --animate-typing: fade-in 0.1s 1s forwards, typing 3s steps(6) 1s forwards,
     blink 1s step-end infinite;
 
   @keyframes fade-in {
@@ -34,7 +34,7 @@
       width: 0ch;
     }
     to {
-      width: calc(20ch + 2px);
+      width: calc(6ch + 2px);
     }
   }
   @keyframes blink {
