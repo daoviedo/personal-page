@@ -15,7 +15,7 @@ function Contact() {
         <IoIosCall size={24} />
       </Button>
       <Button
-        href="mailto:daniel.a2006@hotmail.com"
+        href="mailto:daniel.ovi13@gmail.com"
         className="p-2 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-in-out hover:scale-110 hover:text-dark-blue transition-colors"
         target="_blank"
         rel="noopener noreferrer"
