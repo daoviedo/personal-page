@@ -22,7 +22,7 @@ function About() {
             Daniel Oviedo
           </h1>
           <h2 className="flex flex-col sm:block sm:flex-row font-light text-lg motion-preset-blur-up motion-duration-1000 motion-translate-y-in-50 motion-delay-300">
-            Software Engineer II at{' '}
+            Frontend Engineer at{' '}
             <span className="inline-block opacity-0 font-light text-lg overflow-hidden whitespace-nowrap font-mono animate-typing border-r-2 h-6 -mb-1 text-dark-blue dark:text-blue-400 border-r-light-text-primary dark:border-r-dark-text-primary">
               Trumid
             </span>
